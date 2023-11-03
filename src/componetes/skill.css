@@ -1,0 +1,75 @@
+.section--skills {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: var(--BorderRadius);
+    background-color: #fff;
+    width: 100%;
+}
+
+.section--skills-titulo {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--GrisOscuro);
+}
+
+.section__article--skills-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__article__div--skills-container1,
+.section__article__div--skills-container2 {
+    display: flex;
+    padding: 8px 0;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.section__article__div--html,
+.section__article__div--css,
+.section__article__div--js,
+.section__article__div--react {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__article__div--html--subhtml,
+.section__article__div--css-subcss,
+.section__article__div--js-subjs,
+.section__article__div--react-subreact {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--GrisColor);
+}
+
+.section__article__div--html--progress {
+    width: 60%;
+    height: 10px;
+    appearance: none;
+}
+
+::-webkit-progress-value {
+    background-color: var(--CelesteColor);
+}
+
+@media (min-width:1200px) {
+
+    .section--skills {
+        width: 100%;
+        grid-area: skills;
+    }
+
+    .section__article--skills-container {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        padding: 0 16px;
+        height: 82px;
+        justify-content: space-between;
+    }
+
+}

@@ -1,0 +1,21 @@
+.errorcontener{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.errorcontener__h3{
+    margin-bottom: 6px;
+    color: cornflowerblue;
+    font-weight: 700;
+}
+
+.errorcontener__p{
+    color: #070777;
+    filter: drop-shadow(3px 3px 2px black);
+}

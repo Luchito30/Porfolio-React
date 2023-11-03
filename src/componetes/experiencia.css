@@ -1,0 +1,128 @@
+.section--experiens {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #FFF;
+    border-radius: var(--BorderRadius);
+    width: 100%;
+    height: 329px;
+}
+
+.section--experiens-titulo {
+    font-size: 24px;
+    color: var(--GrisOscuro);
+    font-weight: 600;
+}
+
+.section--experiens--container{
+    height: 500px;
+}
+
+.section__article--experiens {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: var(--BorderRadius);
+    width: 100%;
+    height: 205px;
+    margin: 0 auto;
+    border: 1px solid var(--GrisClaro);
+}
+
+.section__article__div--experiens {
+    display: flex;
+    padding: 4px;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1 0 0;
+}
+
+.section__article__div--experiens-img {
+    width: 55px;
+    height: 40px;
+}
+
+.section__article__div--experiens-textcontainer {
+    display: flex;
+    padding: 4px;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.section__article__div--experiens-fecha {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--GrisColor);
+
+}
+
+.section__article__div--experiens-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.section__article--description {
+    flex: 1 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--GrisColor);
+}
+
+@media (min-width:486px) {
+    .section__article__div--experiens-fecha {
+        font-size: 15px;
+    
+    }
+    
+    .section__article__div--experiens-name {
+        font-size: 15px;
+    }
+
+    .section__article--description{
+        font-size: 15px;
+    }
+}
+
+@media (min-width:1200px) {
+    .section--experiens{
+        padding: 16px;
+        grid-area: experiencia;
+        width: 100%;
+        height: 723px;
+        gap: 16px;
+    }
+
+    .section__article--experiens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        flex: 1 0 0;
+        max-width: 100%;
+    }
+
+    .section__article__div--experiens {
+        justify-content: center;
+        flex-direction: row;
+        flex: 0;
+    }
+
+    .section__article__div--experiens-fecha {
+        font-size: 16px;
+    
+    }
+    
+    .section__article__div--experiens-name {
+        font-size: 16px;
+    }
+
+    .section__article--description{
+        width: 100%;
+        max-width: 261px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: var(--BorderRadius);
+    width: 100%;
+    max-width: 462px;
+}
+
+.header__section--img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__section--img-perfil {
+    object-position: 0px -42px;
+    border-radius: var(--BorderRadius);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 340px;
+}
+
+.header__section {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.header__section__div--info {
+    display: flex;
+    width: 268px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.header__section__article--Name {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.header__section__article--Name-titulo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header__section__article--Name-nombre {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--GrisColor);
+}
+
+.header__section__article--Contacto {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.header__section__article--carta {
+    margin-bottom: 8px;
+}
+
+.header__section__article--carta,
+.header__section__article--tel {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.header__section__article--Presentacion {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--GrisColor);
+}
+
+@media (min-width: 1200px) {
+    .header {
+        width: 100%;
+        height: 663px;
+        max-width: 559px;
+        grid-area: 1/1;
+    }
+
+    .header__section__article--Name-titulo {
+        width: 115.42096px;
+        height: 24.53808px;
+    }
+
+    .header__section__article--Name-nombre {
+        width: 212.73696px;
+        height: 18.61504px;
+    }
+
+    .header__section__article--Presentacion {
+        height: 101.84608px;
+        align-self: stretch;
+    }
+}
