@@ -1,7 +1,6 @@
+import Perfil from './componetes/Perfil'
 import Main from './componetes/main'
-import Perfil from './componetes/perfil'
-import './general.css'
-
+import "./index.css"
 
 function App() {
   

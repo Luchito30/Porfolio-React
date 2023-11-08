@@ -1,4 +1,3 @@
-import '../general.css';
 import Card from './Card';
 import Certificado from './Certificado';
 import Experiencia from './Experiencia';

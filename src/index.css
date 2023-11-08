@@ -1,9 +1,68 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+:root {
     --FrontFamily: "Montserrat";
     --GrisColor: #828282;
     --GrisOscuro: #4F4F4F;
     --GrisClaro: #C4C4C4;
     --CelesteColor: #2F80ED;
-    --BlancoOpaco:#F3EBEB;
+    --BlancoOpaco: #F3EBEB;
     --BorderRadius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--BlancoOpaco);
+    color: #000;
+    justify-content: center;
+    font-family: var(--FrontFamily);
+    width: 100%;
+}
+
+.main {
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 462px;
+}
+
+
+@media (min-width:1200px) {
+    .body {
+        align-items: flex-start;
+        grid-auto-flow: column;
+        padding: 16px 32px;
+        width: 100%;
+        display: grid;
+        gap: 0;
+        grid-template-columns: auto;
+    }
+
+    .main {
+        display: grid;
+        grid-template-areas:
+            ". skills"
+            ". proyecto"
+            ". card"
+            "experiencia card"
+            "certificado certificado";
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        grid-template-columns: minmax(0, 559px) minmax(0, 865px);
+        grid-area: 1/1;
+        max-width: 100%;
+    }
 }

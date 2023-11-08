@@ -36,11 +36,11 @@ function Perfil() {
   }, []);
 
   if (error) {
-    return <ErrorComponent error={error} errorClass="header" />;
+    return <ErrorComponent error={error} errorClass="header__loader" />;
   }
 
   if (!perfilData) {
-    return <Loader />;
+    return <Loader clase="header__loader"/>;
   }
 
   return (

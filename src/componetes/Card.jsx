@@ -42,7 +42,7 @@ function Card() {
     }
 
     if (!cardData) {
-        return <Loader />;
+        return <Loader clase="card--container"/>;
     }
 
     const cambiarVista = (vista) => {

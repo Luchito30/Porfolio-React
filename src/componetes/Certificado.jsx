@@ -45,7 +45,7 @@ function Certificado() {
       }
 
     if (!certificadoData) {
-        return <Loader />;
+        return <Loader clase="section--certificado"/>;
     }
 
     return (

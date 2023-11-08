@@ -46,7 +46,7 @@ function Experiencia() {
       }
 
     if (!expData) {
-        return <Loader />;
+        return <Loader clase= "section--experiens"/>;
     }
 
     return (

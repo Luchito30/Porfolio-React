@@ -36,7 +36,7 @@ function Skill() {
   }
 
   if (!skillData) {
-    return <Loader />;
+    return <Loader clase="section--skills"/>;
   }
 
   const skillItems = skillData.slice(0, 2).map((dato) => (

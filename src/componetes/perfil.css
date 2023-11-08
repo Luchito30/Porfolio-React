@@ -95,6 +95,13 @@
         grid-area: 1/1;
     }
 
+    .header__loader{
+        width: 100%;
+        height: 450px;
+        max-width: 559px;
+        grid-area: 1/1;
+    }
+
     .header__section__article--Name-titulo {
         width: 115.42096px;
         height: 24.53808px;
